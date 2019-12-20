@@ -4,6 +4,8 @@ export class Hotel {
     public id: number,
     public name: string,
     public power: string,
+    public category: string,
+    public country: string,
     public alterEgo?: string
   ) {  }
 

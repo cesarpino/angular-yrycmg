@@ -12,6 +12,8 @@ export class HotelFormComponent {
   powers = ['Really Smart', 'Super Flexible',
             'Super Hot', 'Weather Changer'];
 
+  category = ['**', '***', '****', '*****'];
+
   model = new Hotel(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
 
   submitted = false;
@@ -21,7 +23,7 @@ export class HotelFormComponent {
   // TODO: Remove this when we're done
   get diagnostic() { return JSON.stringify(this.model); }
 
-  newHero() {
+  newHotel() {
     this.model = new Hotel(42, '', '');
   }
 
@@ -29,7 +31,7 @@ export class HotelFormComponent {
     let myHotel =  new Hotel(42, 'SkyDog',
                            'Fetch any object at any distance',
                            'Leslie Rollover');
-    console.log('My hero is called ' + myHotel.name); // "My hero is called SkyDog"
+    console.log('My hotel is called ' + myHotel.name); // "My hero is called SkyDog"
     return myHotel;
   }
 
